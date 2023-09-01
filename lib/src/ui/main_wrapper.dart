@@ -36,7 +36,7 @@ class _MainWrapperState extends State<MainWrapper> {
                         Text(
                           context.l10n.appTitle,
                           style: const TextStyle(
-                            fontSize: 20,
+                            fontSize: 25,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -45,6 +45,7 @@ class _MainWrapperState extends State<MainWrapper> {
                           style: const TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
+                            color: Colors.grey
                           ),
                         ),
                       ],
