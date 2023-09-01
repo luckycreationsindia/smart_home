@@ -1,0 +1,11 @@
+{
+  "@@locale": "hi",
+  "appTitle": "स्मार्ट घर",
+  "@appTitle": {
+    "description": "App Title"
+  },
+  "subTitle": "अपने घर को स्मार्ट बनाएं",
+  "@subTitle": {
+    "description": "App Sub Title"
+  }
+}
