@@ -97,6 +97,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  dotenv:
+    dependency: "direct main"
+    description:
+      name: dotenv
+      sha256: e169b516bc7b88801919e1c508772bcb8e3d0d1776a43f74ab692c57e741cd8a
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.0"
   fake_async:
     dependency: transitive
     description:
@@ -118,6 +126,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_blue_plus:
+    dependency: "direct main"
+    description:
+      name: flutter_blue_plus
+      sha256: ad6f7076519c7f5c6cb0336ba10e919bb6c228e8f83bad5df275f01d3591a945
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.14.11"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
