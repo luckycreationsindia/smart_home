@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "appTitle": "Smart Home",
+  "@appTitle": {
+    "description": "App Title"
+  },
+  "subTitle": "Make your home smarter",
+  "@subTitle": {
+    "description": "App Sub Title"
+  }
+}
