@@ -7,8 +7,9 @@ import 'package:smart_home/src/utils/router.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  GoogleFonts.config.allowRuntimeFetching = false;
   //Set Default Language
-  Intl.defaultLocale = 'hi';
+  Intl.defaultLocale = 'en';
   //Error Handling
   FlutterError.onError = (details) {
     print(details);
@@ -29,9 +30,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         AppLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
+        ...GlobalMaterialLocalizations.delegates,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
+      locale: Locale(Intl.defaultLocale!),
       onGenerateTitle: (context) => context.l10n.appTitle,
       theme: ThemeData(
         useMaterial3: true,
