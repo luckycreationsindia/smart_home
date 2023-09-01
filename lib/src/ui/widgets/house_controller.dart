@@ -40,7 +40,9 @@ class _HouseControllerState extends State<HouseController> {
             ],
           ),
         ),
-        const LightControllerWidgets(),
+        LightControllerWidgets(
+          onOffChange: (state) {},
+        ),
       ],
     );
   }

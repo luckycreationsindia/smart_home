@@ -40,7 +40,9 @@ class _ACControllerState extends State<ACController> {
             ],
           ),
         ),
-        const LightControllerWidgets(),
+        LightControllerWidgets(
+          onOffChange: (state) {},
+        ),
       ],
     );
   }

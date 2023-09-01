@@ -40,7 +40,9 @@ class _RefrigeratorControllerState extends State<RefrigeratorController> {
             ],
           ),
         ),
-        const LightControllerWidgets(),
+        LightControllerWidgets(
+          onOffChange: (state) {},
+        ),
       ],
     );
   }

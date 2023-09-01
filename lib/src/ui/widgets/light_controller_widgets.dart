@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LightControllerWidgets extends StatefulWidget {
-  const LightControllerWidgets({super.key});
+  const LightControllerWidgets({super.key, required this.onOffChange});
+  final Function(bool state) onOffChange;
 
   @override
   State<LightControllerWidgets> createState() => _LightControllerWidgetsState();
@@ -68,6 +69,7 @@ class _LightControllerWidgetsState extends State<LightControllerWidgets> {
                     onChanged: (newVal) {
                       setState(() {
                         onOffStatus = newVal;
+                        widget.onOffChange(onOffStatus);
                       });
                     },
                     activeColor: Colors.white,
