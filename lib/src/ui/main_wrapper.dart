@@ -50,10 +50,13 @@ class _MainWrapperState extends State<MainWrapper> {
                       ],
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.notifications_none_outlined),
-                    padding: const EdgeInsets.all(15),
+                  Builder(
+                    builder: (context) {
+                      return IconButton(
+                        onPressed: () => Scaffold.of(context).openEndDrawer(),
+                        icon: const Icon(Icons.notifications_none_outlined),
+                      );
+                    },
                   )
                 ],
               ),
@@ -67,6 +70,30 @@ class _MainWrapperState extends State<MainWrapper> {
             ],
           ),
         ),
+      ),
+      endDrawer: Builder(
+        builder: (context) {
+          return Drawer(
+            child: Container(
+              color: Theme.of(context).drawerTheme.backgroundColor,
+              child: ListView(
+                children: [
+                  AppBar(
+                    title: const Text("Notifications"),
+                    actions: [
+                      IconButton(
+                        onPressed: () {
+                          Scaffold.of(context).closeEndDrawer();
+                        },
+                        icon: const Icon(Icons.close),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          );
+        },
       ),
     );
   }
